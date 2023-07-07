@@ -35,7 +35,7 @@
 .box:hover{
     background-color: rgb(215, 215, 204);
 }
-a{
+.menu-link{
     display: inline-block;
     padding: 20px 42px; 
     border: none;
@@ -50,7 +50,7 @@ display: flex;
 justify-content: space-around;
 height: 100vh;
 align-items: center;
-background-image: url(images/background.png),linear-gradient(135deg,rgb(193, 192, 192),rgb(0, 0, 0));
+background-image: url(images/background.png),linear-gradient(135deg,rgb(173, 169, 169),rgb(75, 80, 69));
 }
 .banner-description{
 color: black;
@@ -87,6 +87,10 @@ margin-left: 3px;
     text-align: center;
     margin-bottom: 10px;
 }
+#about{
+    padding-top:20px ;
+    background-image: url(images/background.png),linear-gradient(135deg,rgb(37, 44, 50),rgb(120, 120, 120));
+}
 .about-section{
     display: flex;
     height: fit-content;
@@ -94,16 +98,18 @@ margin-left: 3px;
     justify-content: space-around;
 }
 #services{
-    height: 70vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-image: url(images/background.png),linear-gradient(rgb(135, 131, 131),black);
+    background-image:linear-gradient(rgb(43, 43, 43),black);
+    padding-top: 20px;
 }
 .service-section{
     display: flex;
     justify-content: space-around;
+    padding-bottom:  20px; ;
 }
 .tittle-3{
     font-size: 50px;
@@ -114,9 +120,85 @@ margin-left: 3px;
 }
 .box2{
     color: white;
-    background-color: grey;
+    background-color: rgb(28, 27, 27);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    width: 100px;
+    width: 200px;
+    /* height: max-content; */
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 60px rgb(173, 173, 173);
+}
+
+.btn2{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 1px;
+    cursor: pointer;
+    font-weight:500;
+    }
+.btn2:hover{
+    background-color: rgb(122, 176, 122);}
+footer{
+    background-image: linear-gradient(rgb(206, 206, 206),rgb(55, 54, 54));
+}
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:60vh;
+}
+.footer-link{
+    text-decoration: none;
+    color: black;
+    font-size:medium;
+    font-weight: normal;
+}
+.footer-link:hover{
+    color: cadetblue;
+}
+.foot-logo-section{
+    display: block;
+    width: 300px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.supports{
+    display: flex;
+    flex-direction: column;
+}
+e-mail:hover{
+    cursor: pointer;
+    color: goldenrod;
+}
+hr.line{
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #d5d5d5;
+    text-align: center;
+}
+hr.line:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: rgb(64, 65, 64);
+}
+.copy-right{
+    font-size: small;
+    text-align: center;
+    padding-bottom: 10px;
 }
