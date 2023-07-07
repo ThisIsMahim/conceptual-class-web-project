@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
 }
-header{
+.logo-section{
     display: flex;
     justify-content: space-around;
     height: 10vh;
-    background-image: linear-gradient(35deg,#ffffff,#4c4c4c);
+    background-image: linear-gradient(35deg,#a6a2a2,#343333);
     align-items: center;
 }
 .logo{
@@ -20,12 +20,37 @@ header{
     align-self: last baseline;
     margin: 0px 0px 10px 210px;
 }
+.menu-options{
+    display: flex;
+    height: max-content;
+}
+.box{
+    width: 25%;
+    background-color:#686868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.box:hover{
+    background-color: rgb(215, 215, 204);
+}
+a{
+    display: inline-block;
+    padding: 20px 42px; 
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+
+}
 .banner-container{
 display: flex;
 justify-content: space-around;
-height: 80vh;
+height: 100vh;
 align-items: center;
-background-image: url(images/background.png),linear-gradient(45deg,rgb(231, 227, 227),rgb(0, 0, 0));
+background-image: url(images/background.png),linear-gradient(135deg,rgb(193, 192, 192),rgb(0, 0, 0));
 }
 .banner-description{
 color: black;
@@ -50,4 +75,48 @@ margin-left: 3px;
     color: white;
     padding: 8px;
     border-radius: 5px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+}
+.tittle-2{ 
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about-section{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+}
+#services{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(images/background.png),linear-gradient(rgb(135, 131, 131),black);
+}
+.service-section{
+    display: flex;
+    justify-content: space-around;
+}
+.tittle-3{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+.box2{
+    color: white;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
 }
